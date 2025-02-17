@@ -26,11 +26,9 @@ func main() {
     // This will block the main goroutine
 
 	msg, ok := <-mychannel
-	if !ok {
+	if ok {
         fmt.Println(msg)
     } else {
         fmt.Println("Channel closed")
     }
-
-
 }

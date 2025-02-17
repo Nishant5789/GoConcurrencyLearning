@@ -8,7 +8,6 @@ import (
 
 var lock sync.Mutex
 
-
 func processdata(data int, wg *sync.WaitGroup, output *[]int) {
 	defer wg.Done()
 	lock.Lock()

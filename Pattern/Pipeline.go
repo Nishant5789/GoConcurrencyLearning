@@ -60,5 +60,4 @@ func main() {
 
     // stage 3: Print the final result
     printResult(evenchannel)
-
 }

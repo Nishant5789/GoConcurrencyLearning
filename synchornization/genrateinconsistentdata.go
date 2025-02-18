@@ -3,7 +3,7 @@ package main
 import (
 	"sync"
 	"fmt"
-	"time"
+	// "time"
 )
 
 
@@ -11,7 +11,7 @@ func processdata(data int, wg *sync.WaitGroup, output *[]int) {
 	defer wg.Done()
 
     // Simulate some processing time
-    time.Sleep(time.Second * 3)  
+    // time.Sleep(time.Second * 1)  
 
     *output = append(*output, data*2)
 }

@@ -10,6 +10,8 @@ func main() {
         mychannel <- char
     }
 	close(mychannel)
+    // genrate error
+    // mychannel <- "q"
 
     for msg := range mychannel {
         fmt.Print(msg)
